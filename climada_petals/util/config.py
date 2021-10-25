@@ -46,4 +46,5 @@ CONFIG.__dict__ = Config.from_dict(_fetch_conf([
     Path.home() / '.config',  # ~/.config directory
     Path.cwd(),  # current working directory
 ], CONFIG_NAME)).__dict__
+Config.SOURCE_DIR = SOURCE_DIR.parent
 LOGGER.setLevel(getattr(logging, CONFIG.log_level.str()))

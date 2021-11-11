@@ -1346,9 +1346,6 @@ class WildFire(Hazard):
         self.check()
         return self
 
-    def aa(a):
-        b = a+a
-        return b
     
 @numba.njit
 def _fill_intensity_max(num_centr, ind, index_uni, lat_lon_cpy, fir_bright):
